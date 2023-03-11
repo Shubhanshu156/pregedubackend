@@ -8,7 +8,7 @@ import numpy as np
 import pandas as pd
 import os
 # import seaborn as sns
-import matplotlib.pyplot as plt
+
 
 import xgboost
 # from sklearn.model_selection import StratifiedKFold
@@ -16,8 +16,8 @@ import xgboost
 # import tensorflow as tf
 # from tensorflow.keras.models import Sequential
 
-from IPython.display import clear_output
-import warnings
+
+
 
 def make_prediction(age,sbp,dbp,bs,bodytemp,heartrate):
     loaded_model = pic.load(open('savedmodel/pregnancy_model.pkl', "rb"))
